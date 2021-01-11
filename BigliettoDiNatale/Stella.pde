@@ -12,9 +12,9 @@ class Stella {
   }
   public void show(){ //funzione per disegnare una stella
     fill(COLORE_STELLA);
+    triangle(x-w,y+(3*h/4),x-w,y+(1*h/4),x-(1*w/4),y+(h/2));
     triangle(x-w/2,y+(3*h/4),x-(1*w/4),y,x,y+(3*h/4));
     triangle(x-w/2,y+1*h/4,x-(1*w/4),y+h,x,y+(1*h/4));
-    triangle(x-w,y+(3*h/4),x-w,y+(1*h/4),x-(0.43*w),y+(h/2));
   }
   public void move(){ //funzione per disegnare una stella
     if ((x-w)<width){
